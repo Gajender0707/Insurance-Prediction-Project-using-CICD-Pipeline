@@ -23,7 +23,7 @@ logging.basicConfig(
     format="%(asctime)s-%(name)s=%(levelname)s-%(lineno)s-%(message)s",
 )
 
-logging.info("This is logged")
-logging.info("Here log is logged")
-logging.info("This is for checking that happening simultanously")
+# logging.info("This is logged")
+# logging.info("Here log is logged")
+# logging.info("This is for checking that happening simultanously")
 
