@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 # print(os.getcwd())
-folder_name=datetime.strftime(datetime.now(),"%d_%m_%y_%H_%M_%S")
+folder_name=datetime.strftime(datetime.now(),"%H_%M_%S_%d_%m_%y")
 # print(folder_name)
 file_name=f"{folder_name}.log"
 # print(file_name)
