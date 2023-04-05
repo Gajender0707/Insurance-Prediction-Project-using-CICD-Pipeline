@@ -14,7 +14,7 @@ log_folder=os.path.join(foler,folder_name)
 os.makedirs(log_folder,exist_ok=True)
 # print(log_folder)
 log_file_name=os.path.join(log_folder,file_name)
-# print(log_file_name)
+print(log_file_name)
 
 logging.basicConfig(
     filename=log_file_name,
