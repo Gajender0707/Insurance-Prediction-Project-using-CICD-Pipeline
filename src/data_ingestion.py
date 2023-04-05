@@ -42,6 +42,6 @@ class DataIngestion:
         except Exception as e:
             raise CustomError(e)
         
-if __name__=="__main__":
-    obj=DataIngestion()
-    obj.initiate_data_ingestion()
+# if __name__=="__main__":
+#     obj=DataIngestion()
+#     obj.initiate_data_ingestion()
