@@ -21,7 +21,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Data Ingstion has been started")
         try:
-            data=pd.read_csv("data/StudentsPerformance.csv")  #read the dataset
+            data=pd.read_csv("data/insurance.csv")  #read the dataset
             logging.info("Data Read Successfully")    
 
             os.makedirs(os.path.dirname(self.ingestion_config.data_path),exist_ok=True)
@@ -42,6 +42,6 @@ class DataIngestion:
         except Exception as e:
             raise CustomError(e)
         
-# if __name__=="__main__":
-#     obj=DataIngestion()
-#     obj.initiate_data_ingestion()
+if __name__=="__main__":
+    obj=DataIngestion()
+    obj.initiate_data_ingestion()
