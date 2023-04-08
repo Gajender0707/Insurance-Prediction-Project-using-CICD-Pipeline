@@ -1,0 +1,13 @@
+2023-04-08 11:44:16,697-root=INFO-22-Data Ingstion has been started
+2023-04-08 11:44:16,702-root=INFO-25-Data Read Successfully
+2023-04-08 11:44:16,703-root=INFO-29-Data split has been initiated
+2023-04-08 11:44:16,717-root=INFO-35-Ingestion of Data has been succesfully 
+2023-04-08 11:44:16,732-root=INFO-77-Read the Train and Test data
+2023-04-08 11:44:16,733-root=INFO-78-Obtained the Preprocessor
+2023-04-08 11:44:16,742-root=INFO-48-Pipeline has been created..
+2023-04-08 11:44:16,742-root=INFO-49-numeric and categorical has been created..
+2023-04-08 11:44:16,742-root=INFO-51-our Categorical Features are Index(['sex', 'smoker', 'region'], dtype='object') 
+2023-04-08 11:44:16,743-root=INFO-52-our Numeric Features are: Index(['age', 'bmi', 'children'], dtype='object')
+2023-04-08 11:44:16,744-root=INFO-91-x_train, y_train and x_test,y_test getted successfully
+2023-04-08 11:44:16,760-root=INFO-96-fit and transform the data using preprocessing object using pipelina and columntransformer
+2023-04-08 11:44:16,760-root=INFO-100-train array and test array are created after the fit and transform
