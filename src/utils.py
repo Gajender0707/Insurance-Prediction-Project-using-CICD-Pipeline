@@ -4,6 +4,7 @@ import pickle
 import os
 import dill
 from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
 
 
 def save_obj(file_path,object):
@@ -17,12 +18,20 @@ def save_obj(file_path,object):
             raise CustomError(e)
         
 
-def evaluate_models(x_train,y_train,x_test,y_test,models):
+def evaluate_models(x_train,y_train,x_test,y_test,models,param):
       try:
             report={}
             for i in range(len(list(models))):
                   model=list(models.values())[i]
                   logging.info("Training the Models")
+                  para=param[list(models.keys())[i]]
+                  
+                  gs=GridSearchCV(model,para,cv=3)
+                  gs.fit(x_train,y_train)  #now fit with some parameters with different different models
+
+
+                  model.set_params(**gs.best_params_)     #set the best parameters 
+
                   model.fit(x_train,y_train)
                   y_train_pred=model.predict(x_train)
                   y_test_pred=model.predict(x_test)
