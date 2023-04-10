@@ -202,3 +202,63 @@
             
 #         except Exception as e:
 #             raise CustomError(e)
+
+##model Training##
+
+# import os
+# from exception import CustomError
+# # from logger import logging
+# from dataclasses import dataclass
+# # from catboost import CatBoostRegressor
+# from xgboost import XGBRegressor
+
+# from sklearn.ensemble import (AdaBoostRegressor,
+#                               RandomForestRegressor,
+#                               GradientBoostingRegressor)
+
+# from sklearn.linear_model import LinearRegression
+# from sklearn.metrics import r2_score,mean_squared_error,mean_absolute_error
+# from sklearn.neighbors import KNeighborsRegressor
+# from sklearn.tree import DecisionTreeRegressor
+# from utils import evaluate_models,save_obj
+# from check import model_evaluate, save_objects
+
+# @dataclass
+# class RoughModelTrainerConfig:
+#     model_saving_path=os.path.join("Artifacts","rough_model.pkl")
+
+# class RoughModelTrainer:
+#     try:
+
+#         def __init__(self):
+#             self.model_trainer_config=RoughModelTrainerConfig()
+
+#         def initiate_rough_model_trainer(self,train_array,test_array):
+
+#             x_train,y_train,x_test,y_test=(train_array[:,:-1],train_array[:,-1],
+#                                         test_array[:,:-1],test_array[:,-1]
+#             )
+
+#             models={
+#                 "Linerregression":LinearRegression(),
+#                 "Xgboost":XGBRegressor(),
+#                 "Kneighbour": KNeighborsRegressor(),
+#                 "Decision Tree Regressor":DecisionTreeRegressor(),
+#                 "Random Forest Regressor":RandomForestRegressor(),
+#                 "Ada grad Regressor":AdaBoostRegressor(),
+#                 "Gradiant Regressor":GradientBoostingRegressor()
+#             }
+
+#             records=model_evaluate(x_train,y_train,x_test,y_test,models)
+#             best_score=max(list(records.values()))
+#             # best_model=list(records.keys())[list(records.values).index(best_score)]
+#             best_model=list(records.keys())[list(records.values()).index(best_score)]
+
+#             save_objects(self.model_trainer_config.model_saving_path,best_model)
+
+#             return print("This is rough model best accuracy:",best_score)
+#     except Exception as e:
+#         raise CustomError(e)
+
+
+
