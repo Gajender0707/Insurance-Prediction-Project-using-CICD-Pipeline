@@ -122,3 +122,83 @@
 # obj=DataIngestion()
 # obj.initiate_data_ingestion()
 
+# from logger import logging
+# from exception import CustomError
+# from dataclasses import dataclass
+# import pandas as pd
+# import numpy as np
+# from sklearn.model_selection import train_test_split
+# from sklearn.compose import ColumnTransformer
+# from sklearn.pipeline import Pipeline
+# from sklearn.impute import SimpleImputer
+# from sklearn.preprocessing import OneHotEncoder,StandardScaler
+# import os
+# from utils import save_obj
+
+# @dataclass
+# class DataTransformationConfig:
+#     preprocessor_obj_path=os.path.join("Artifacts","rough.pkl")
+
+# class DataTransformation:
+
+#     def __init__(self):
+#         self.preprocessor_obj_path=DataTransformationConfig()
+
+#     def Get_Preprocessor(self):
+#         try:
+#             data=pd.read_csv(r"C:\Users\asdf\Documents\D.S\CICD\CICD-Test\data\insurance.csv")
+#             logging.info("Data has been read ")
+#             Target_feature="charges"
+#             x=data.drop(Target_feature,axis=1)
+#             num_features=x.select_dtypes([float,int]).columns
+#             cat_features=x.select_dtypes(object).columns
+#             logging.info("Numeric and Categorical features are diffirenciate successfully")
+#             #create the num and cat pipline
+
+#             num_pipe=Pipeline(steps=[
+#                 ("imputer",SimpleImputer(strategy="median")),
+#                 ("Scaler",StandardScaler())
+#             ])           
+#             cat_pipe=Pipeline(steps=[
+#                 ("imputer",SimpleImputer(strategy="most_frequent")),
+#                 ("Encoder",OneHotEncoder())
+#             ])
+
+#             logging.info("Both the Pipline has been created successfully")
+
+#             Preprocessor=ColumnTransformer([
+#                 ("numeric",num_pipe,num_features),
+#                 ("categorical",cat_pipe,cat_features)
+#             ])
+#             logging.info("Processor has been Created Successfully..")
+
+#             return Preprocessor
+
+#         except Exception as e:
+#             raise CustomError(e)
+        
+#     def initiate_data_transform(self,train_data_path,test_data_path):
+#         try:
+#             train_data=pd.read_csv(train_data_path)
+#             test_data=pd.read_csv(test_data_path)
+#             Target_feature="charges"
+#             y_train=train_data[Target_feature]
+#             x_train=train_data.drop(Target_feature,axis=1)
+#             y_test=test_data[Target_feature]
+#             x_test=test_data.drop(Target_feature,axis=1)
+#             preprocessor_obj=self.Get_Preprocessor()
+
+#             x_train_x=preprocessor_obj.fit_transform(x_train)
+#             x_test_x=preprocessor_obj.fit_transform(x_test)
+
+#             x_train_array=np.c_[x_train_x,np.array(y_train)]
+#             x_test_array=np.c_[x_test_x,np.array(y_test)]
+
+#             save_obj(self.preprocessor_obj_path.preprocessor_obj_path,preprocessor_obj)
+
+#             return (x_train_array,
+#                     x_test_array,
+#                     preprocessor_obj)
+            
+#         except Exception as e:
+#             raise CustomError(e)

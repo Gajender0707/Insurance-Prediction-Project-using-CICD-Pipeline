@@ -6,7 +6,8 @@ import os
 from dataclasses import dataclass
 from logger import logging
 from exception import CustomError
-from data_transformation import DataTransformation,DataTransformationConfig
+# from data_transformation import DataTransformation,DataTransformationConfig
+from rough import DataTransformationConfig,DataTransformation
 
 @dataclass
 class DataIngestionConfig:
@@ -48,3 +49,5 @@ if __name__=="__main__":
 
     data_transformation=DataTransformation()
     data_transformation.initiate_data_transformation(train_data_path,test_data_path)
+    # data_transformation_rough=DataTransformation()
+    # data_transformation_rough.initiate_data_transform(train_data_path=train_data_path,test_data_path=test_data_path)

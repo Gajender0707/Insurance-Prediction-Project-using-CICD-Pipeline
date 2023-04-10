@@ -1,0 +1,8 @@
+2023-04-10 09:43:41,751-root=INFO-23-Data Ingstion has been started
+2023-04-10 09:43:41,766-root=INFO-26-Data Read Successfully
+2023-04-10 09:43:41,767-root=INFO-30-Data split has been initiated
+2023-04-10 09:43:41,783-root=INFO-36-Ingestion of Data has been succesfully 
+2023-04-10 09:43:41,806-root=INFO-150-Data has been read 
+2023-04-10 09:43:41,807-root=INFO-155-Numeric and Categorical features are diffirenciate successfully
+2023-04-10 09:43:41,807-root=INFO-167-Both the Pipline has been created successfully
+2023-04-10 09:43:41,807-root=INFO-173-Processor has been Created Successfully..
