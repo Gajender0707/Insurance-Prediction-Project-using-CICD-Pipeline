@@ -7,7 +7,8 @@
     <title>Insurance Charges</title>
 </head>
 <body>
-    <form action="/predict" method="post">
+    <form action="{{ url_for('predict_datapoints') }}" method="post">
+
         <label for="sex">Select the Gender</label>
         <select name="sex" id="sex">
             <option value="Male"> Male</option>
