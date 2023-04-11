@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Charges</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <label for="sex">Select the Gender</label>
+        <select name="sex" id="sex">
+            <option value="Male"> Male</option>
+            <option value="Female">Female</option> 
+        </option>
+        </select>
+        <br>
+        <br>
+        <label for="smoker">Select the Smoker</label>
+        <select id="smoker" name="smoker">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="region">Select the Region</label>
+        <select id="region" name="region">
+            <option value="southeast">Southeast</option>
+            <option value="southwest">Southwest</option>
+            <option value="northwest">Northwest</option>
+            <option value="northeast">Northeast</option>
+
+        </select>
+        <br>
+        <br>
+        <label for="children">Select the Children</label>
+        <input name="children" id="children" type="number">
+        <br>
+        <br>
+        <label for="age"> Select the Age</label>
+        <input name="age" id="age" type="number">
+        <br>
+        <br>
+        <label for="bmi">Select Bmi</label>
+        <input name="bmi" id="bmi" type="number">
+        <br>
+        <br>
+
+        <label style="color:rgb(63, 40, 5)"      for="predict">Press Submit to Predict the Insurance: </label>
+        <input type="submit" name="Predict" id="predict">
+
+
+    </form> 
+</body>
+</html>

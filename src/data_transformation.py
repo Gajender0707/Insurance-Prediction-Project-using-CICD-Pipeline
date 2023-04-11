@@ -99,11 +99,14 @@ class DataTransformation:
             test_arr=np.c_[test_arr_x,np.array(test_df_y)]
             logging.info("train array and test array are created after the fit and transform")
 
+            
+
             save_obj(
                 file_path=self.data_transformtion_config.preprocessor_obj_path,
                 object=preprocessing_obj
             )
             
+            # print(train_arr.shape)
             return (
                 train_arr,
                 test_arr,
