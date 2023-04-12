@@ -1,0 +1,7 @@
+2023-04-12 11:46:57,452-werkzeug=INFO-224-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.64:5000
+2023-04-12 11:46:57,452-werkzeug=INFO-224-[33mPress CTRL+C to quit[0m
+2023-04-12 11:47:02,914-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 11:47:02] "GET / HTTP/1.1" 200 -
+2023-04-12 11:47:11,425-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 11:47:11] "POST /predict HTTP/1.1" 200 -
