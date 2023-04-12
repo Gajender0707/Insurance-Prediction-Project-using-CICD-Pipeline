@@ -6,14 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance Charges</title>
 </head>
-<body style="background-color:#D5F5E3">
-    <h1 style="color: rgb(240, 13, 13); text-align: center;">
-        Insurance Price 
-    </h1>
-    <h3 style="color:#045b2a",text-align:middle><strong>
-        Please Fill the Details for check the Insurance Price
-    </strong></h3>
-    <form action="{{ url_for('predict_datapoints') }}" method="post">
+<body>
+    <form action="/predict" method="post">
 
         <label for="sex">Select the Gender</label>
         <select name="sex" id="sex">
@@ -58,11 +52,6 @@
 
 
     </form> 
-    <h3>You Insurance Price is :  </h3>
-    <p style="color: red;text-align: center;">
-		<strong><em>
-			@madeby2023 Gajender
-		</em></strong>
-	</p>
+    <h3>You Insurance Price   is :{{ pred }} </h3>
 </body>
 </html>

@@ -1,0 +1,20 @@
+2023-04-12 09:44:24,329-werkzeug=WARNING-224- * Debugger is active!
+2023-04-12 09:44:24,331-werkzeug=INFO-224- * Debugger PIN: 885-703-122
+2023-04-12 09:44:25,397-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:44:25,496-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:44:25,499-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:44:25,648-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-12 09:44:32,961-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:32] "GET / HTTP/1.1" 200 -
+2023-04-12 09:44:35,302-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:35] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:44:35,332-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:35] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:44:35,337-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:35] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:44:35,358-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:44:35] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-12 09:53:24,900-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:53:24,920-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:24] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:53:24,924-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:24] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:53:24,945-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:24] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-12 09:53:29,831-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:29] "GET / HTTP/1.1" 200 -
+2023-04-12 09:53:37,561-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:53:37,585-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:37] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:53:37,589-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:37] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:53:37,597-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:53:37] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

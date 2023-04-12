@@ -1,0 +1,4 @@
+2023-04-12 10:47:46,116-werkzeug=WARNING-224- * Debugger is active!
+2023-04-12 10:47:46,118-werkzeug=INFO-224- * Debugger PIN: 885-703-122
+2023-04-12 10:47:49,603-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 10:47:49] "POST /predict HTTP/1.1" 200 -
+2023-04-12 10:48:00,591-werkzeug=INFO-224- * Detected change in 'c:\\Users\\asdf\\Documents\\D.S\\CICD\\CICD-Test\\src\\app.py', reloading

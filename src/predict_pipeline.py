@@ -20,18 +20,18 @@ class PredictPipeline:
 
             scaled_data=preprocessor.transform(features)
             preds=model.predict(scaled_data)
-            preds
+            return preds
         except Exception as e:
             raise CustomError(e)
         
 #we create this class only for the conver the datapoints into the dataFrame row and columns
 class CustomData:
 
-    def __init__(self,age:int,sex:str,bmi:float,chidren:int,smoker:str,region:str):
+    def __init__(self,age:int,sex:str,bmi:float,children:int,smoker:str,region:str):
         self.age=age
         self.sex=sex
         self.bmi=bmi
-        self.children=chidren
+        self.children=children
         self.smoker=smoker
         self.region=region
 
@@ -42,7 +42,7 @@ class CustomData:
                 "age":[self.age],
                 "sex":[self.sex],
                 "bmi":[self.bmi],
-                "chidren":[self.children],
+                "children":[self.children],
                 "smoker":[self.smoker],
                 "region":[self.region]
             }

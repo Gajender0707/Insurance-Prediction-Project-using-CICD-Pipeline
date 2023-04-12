@@ -262,3 +262,54 @@
 
 
 
+from flask import Flask,render_template,request
+import pandas as pd
+import pickle
+
+app=Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("home.html")
+
+@app.route("/predict",methods=["GET","POST"])
+def predict():
+            if request.method=="POST":
+                   
+                age=request.form["age"]
+                sex=request.form.get("sex")
+                bmi=request.form.get("bmi")
+                children=request.form.get("children")
+                smoker=request.form.get("smoker")
+                region=request.form.get("region")
+                d={"age":int(age),"sex":sex,"children":int(children),"smoker":smoker,"region":region,"bmi":int(bmi)}
+
+                data={
+                "age":[age],
+                "sex":[sex],
+                "bmi":[bmi],
+                "children":[children],
+                "smoker":[smoker],
+                "region":[region]
+                }
+                df=pd.DataFrame(data)
+                # print(df)
+                preprocessor_path=r"C:\Users\asdf\Documents\D.S\CICD\CICD-Test\Artifacts\preprocessor.pkl"
+                with open(preprocessor_path,"rb") as f:
+                      preprocessor=pickle.load(f)
+                scaled_data=preprocessor.transform(df)
+                # print(scaled_data)
+                model_path=r"C:\Users\asdf\Documents\D.S\CICD\CICD-Test\Artifacts\Model.pkl"
+                with open(model_path,"rb") as f:
+                      model=pickle.load(f)
+                
+                # print(model)
+                pred=model.predict(scaled_data)
+                print(pred)
+
+                return render_template("rough_html.html",pred=pred[0])
+
+
+if __name__=="__main__":
+    app.run(debug=True)
+

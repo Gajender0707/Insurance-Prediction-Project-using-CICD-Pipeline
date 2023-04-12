@@ -13,7 +13,7 @@
     <h3 style="color:#045b2a",text-align:middle><strong>
         Please Fill the Details for check the Insurance Price
     </strong></h3>
-    <form action="{{ url_for('predict_datapoints') }}" method="post">
+    <form action="/predict" method="post">
 
         <label for="sex">Select the Gender</label>
         <select name="sex" id="sex">
@@ -58,7 +58,7 @@
 
 
     </form> 
-    <h3>You Insurance Price is :  </h3>
+    <h3>You Insurance Price is :  {{ result }} </h3>
     <p style="color: red;text-align: center;">
 		<strong><em>
 			@madeby2023 Gajender

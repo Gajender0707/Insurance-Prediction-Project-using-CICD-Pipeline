@@ -1,0 +1,11 @@
+2023-04-12 09:39:07,790-werkzeug=WARNING-224- * Debugger is active!
+2023-04-12 09:39:07,793-werkzeug=INFO-224- * Debugger PIN: 885-703-122
+2023-04-12 09:39:25,187-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:39:25,279-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:39:25,307-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:39:25,347-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:25] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-12 09:39:38,270-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2023-04-12 09:39:38,296-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:38] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-12 09:39:38,299-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:38] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-12 09:39:38,309-werkzeug=INFO-224-127.0.0.1 - - [12/Apr/2023 09:39:38] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-12 09:40:38,856-werkzeug=INFO-224- * Detected change in 'c:\\Users\\asdf\\Documents\\D.S\\CICD\\CICD-Test\\src\\app.py', reloading
