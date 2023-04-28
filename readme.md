@@ -1,1 +1,1 @@
-CICD-Test
+Here this application is predict the price of the insurance

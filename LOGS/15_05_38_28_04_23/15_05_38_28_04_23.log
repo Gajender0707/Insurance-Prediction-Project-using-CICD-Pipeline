@@ -1,0 +1,8 @@
+2023-04-28 15:05:48,494-werkzeug=INFO-224-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2023-04-28 15:05:48,495-werkzeug=INFO-224-[33mPress CTRL+C to quit[0m
+2023-04-28 15:05:54,814-werkzeug=INFO-224-127.0.0.1 - - [28/Apr/2023 15:05:54] "GET / HTTP/1.1" 200 -
+2023-04-28 15:05:55,623-werkzeug=INFO-224-127.0.0.1 - - [28/Apr/2023 15:05:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-28 15:06:09,960-werkzeug=INFO-224-127.0.0.1 - - [28/Apr/2023 15:06:09] "POST /predict HTTP/1.1" 200 -
